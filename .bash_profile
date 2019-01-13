@@ -1,1 +1,2 @@
-/Users/trevor/.bash_profile
+[[ -s ~/.bashrc ]] && source ~/.bashrc
+
