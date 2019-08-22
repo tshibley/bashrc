@@ -49,4 +49,14 @@ export PS1
 # Useful aliases 
 alias python=python3
 alias dns_cache="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias attu="ssh tshibley@attu.cs.washington.edu"
+alias sync_cap="rsync -ru /Users/trevor/Workspace/gotta-captcha-em-all/* tshibley@attu.cs.washington.edu:~/gotta-captcha-em-all/"
+
+export PATH="$PATH:/Users/trevor/Library/Python/3.7/bin"
+
+# Bayes Commands 
+alias runpretty="cd ~/Workspace/bayes/app && prettier --check \"src/**\""
+alias bayesrender="cd ~/Workspace/bayes/app && npm run start-renderer-dev"
+alias bayesrun="cd ~/Workspace/bayes/app && npm run start-main-dev"
+
 
