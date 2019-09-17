@@ -58,5 +58,23 @@ export PATH="$PATH:/Users/trevor/Library/Python/3.7/bin"
 alias runpretty="cd ~/Workspace/bayes/app && prettier --check \"src/**\""
 alias bayesrender="cd ~/Workspace/bayes/app && npm run start-renderer-dev"
 alias bayesrun="cd ~/Workspace/bayes/app && npm run start-main-dev"
+alias appdata="cd /Users/trevorshibley/Library/Application\ Support/@bayesian/app"
 
+newb() {
+        cd ~/Workspace/bayes/app && git checkout master && git pull && git checkout -b "$1" && git push --set-upstream origin "$1"
+}
 
+alias gs="git status"
+alias gd="git diff"
+
+ga() {
+        git add "$1"
+}
+
+gcm() {
+        git commit -m "$1"
+}
+
+hotfix() {
+        git add . && git commit -m "$1" && git pull && git push
+}
