@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+s",
+        "command": "saveAll"
+    },
+    {
+        "key": "alt+cmd+s",
+        "command": "-saveAll"
+    },
+    {
+        "key": "ctrl+cmd+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "cmd+s",
+        "command": "-workbench.action.files.save"
+    }
+]
